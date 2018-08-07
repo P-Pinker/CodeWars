@@ -20,7 +20,7 @@
 
 
 
-public class Kata {
+public class CountOfPositivesSumOfNegatives {
     public static int[] countPositivesSumNegatives(int[] input) {
 
         int countPos = 0;

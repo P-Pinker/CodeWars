@@ -11,4 +11,18 @@
 
 
 public class ClosestToZero {
+
+    public static Integer find(int[] arr) {
+
+        int num = Math.abs(arr[0]);
+
+        for (int i = 1; i < arr.length; i++) {
+            if (Math.abs(arr[i]) < num){
+                num = arr[i];
+            } else if (Math.abs(arr[i]) == Math.abs(num)) {
+                return null;
+            }
+        }
+        return num;
+    }
 }
